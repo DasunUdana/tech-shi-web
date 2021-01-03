@@ -1821,3 +1821,9 @@ portfolio
 .service-item img {
   width: 46px;
 }
+
+.project-tile {
+  width: 250px; 
+  height: 250px; 
+  overflow: hidden;
+}
