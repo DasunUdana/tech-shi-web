@@ -1827,3 +1827,120 @@ portfolio
   height: 250px; 
   overflow: hidden;
 }
+
+
+/* ============================================== Device Css ================================ */
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 81px;
+  height: 150px;
+  margin: auto;
+  border: 5px black solid;
+  border-top-width: 12px;
+  border-bottom-width: 14px;
+  border-radius: 8px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.smartphone .content img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* The laptop with borders */
+.laptop {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.6) translate(-50%);
+  transform: scale(.6) translate(-50%);
+  left: 50%;
+  position: relative;
+  width: 265px;
+  height: 152px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px 5px 5px;
+  background-color: black;
+  margin-top: 20px;
+}
+
+/* The keyboard of the laptop */
+.laptop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 120%;
+  height: 15px;
+  margin: 7px 0 0 -27px;
+  background: black;
+  border-radius: 3px;
+}
+
+/* The top of the keyboard */
+.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  background: #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+}
+
+/* The screen (or content) of the device */
+.laptop .content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: none;
+}
+
+.laptop .content img {
+  width: 100%;
+  height: 100%;
+}
